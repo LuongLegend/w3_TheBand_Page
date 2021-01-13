@@ -11,10 +11,11 @@ header{
     height: 46px;
     background-color: black;
 }
-.nav li {
+.nav > li {
     display: inline-block;
+    position: relative;
 }
-.nav li a{
+.nav > li > a{
     display: inline-block;
     text-decoration: none;
     line-height: 46px;
@@ -22,32 +23,40 @@ header{
     padding: 0 24px;
     text-transform: uppercase;
 }
-.nav li:hover a{
+.nav .subnav li:hover a,
+.nav > li:hover > a{
     background-color: #cccccc;
     color: black;
 }
+.nav li:hover ul{
+    display: block;
+}
+.nav ,.subnav{
+    list-style-type: none;
+}
 .nav .subnav {
     display: none;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+.subnav ul li{
+    min-width: 60px;
+    display: block;
+}
+.subnav li a{
+    text-decoration: none;
+    line-height: 38px;
+    color: black;
+    display: block;
+    padding: 0 16px;
+    min-width: 160px;
 }
 
-/*test nav*/
-.test-nav {
-    height: 46px;
-    background-color: gray;
-}
-.test-nav a{
-    text-decoration: none;
-    color: honeydew;
-    line-height: 46px;
-    padding: 0 24px;
-}
-.test-nav .zz{
-    text-transform: uppercase;
-}
-.test-nav a:hover{
-    background-color: indigo;
-    display: inline-block;
-}
-.test-nav .sub-test-nav{
-    display: none;
+
+/* slider */
+.slider {
+
 }
