@@ -4,3 +4,50 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 46px;
+    background-color: black;
+}
+.nav li {
+    display: inline-block;
+}
+.nav li a{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 46px;
+    color: white;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+.nav li:hover a{
+    background-color: #cccccc;
+    color: black;
+}
+.nav .subnav {
+    display: none;
+}
+
+/*test nav*/
+.test-nav {
+    height: 46px;
+    background-color: gray;
+}
+.test-nav a{
+    text-decoration: none;
+    color: honeydew;
+    line-height: 46px;
+    padding: 0 24px;
+}
+.test-nav .zz{
+    text-transform: uppercase;
+}
+.test-nav a:hover{
+    background-color: indigo;
+    display: inline-block;
+}
+.test-nav .sub-test-nav{
+    display: none;
+}
