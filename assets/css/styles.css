@@ -97,3 +97,32 @@ header .search-btn:hover{
     font-weight: 500;
     margin-bottom: 25px;
 }
+/* content */
+section .content {
+    width: 100%;
+    padding: 64px 0;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+section .content-heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+section .content-sub-heading {
+    font-style: italic;
+    font-size: 15px;
+    opacity: .6;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+section .about-text{
+    text-align: justify;
+    line-height: 1.5;
+}
