@@ -11,6 +11,9 @@ header{
     height: 46px;
     background-color: black;
 }
+ nav {
+    display: inline-block;
+}
 .nav > li {
     display: inline-block;
     position: relative;
@@ -42,6 +45,10 @@ header{
     left: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
+
+.nav .nav-arrow-down {
+    font-size: 15px;
+}
 .subnav ul li{
     min-width: 60px;
     display: block;
@@ -55,7 +62,16 @@ header{
     min-width: 160px;
 }
 
-
+header .search-btn {
+    float: right;
+    line-height: 46px;
+    padding: 0 24px;
+    color: white;
+}
+header .search-btn:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
 /* slider */
 .slider {
 
