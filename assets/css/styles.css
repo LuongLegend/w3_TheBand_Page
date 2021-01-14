@@ -4,8 +4,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+.text-white {
+    color: white
+}
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
 }
 header{
     position: fixed;
@@ -111,7 +117,7 @@ section .content-heading {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 30px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 section .content-sub-heading {
@@ -124,5 +130,63 @@ section .content-sub-heading {
 
 section .about-text{
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.4;
+    font-size: 14px;
+}
+/* band member */
+.member-list {
+    margin-top: 48px;
+}
+
+.member-list .member-item {
+    float: left;
+    width: calc(100%/3);
+}
+
+.member-list .member-name {
+    font-size: 15px;
+    text-align: center;
+}
+
+.member-list .member-avatar {
+    width: 154px;
+    border-radius: 5px;
+}
+/* tour */
+.tour-background {
+    margin-top: 50px;
+    background-color: black;
+}
+.tour-month-list {
+    list-style-type: none;
+    background-color: white;
+    margin-top: 35px;
+}
+
+.tour-month-list li{
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 10px 16px;
+}
+
+.tour-month-list .tour-sold-out {
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: white;
+    margin-left: 46px;
+    font-size: 15px;
+}
+
+.tour-quantity {
+    float:right;
+    background-color: black;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    color: white;
+    margin-top: -3px;
+    text-align: center;
+    margin-right: 20px;
 }
