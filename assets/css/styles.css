@@ -8,13 +8,42 @@
 .text-white {
     color: white;
 }
+.fs-18 {
+    font-size: 18px;
+}
 .text-center{
     text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.w-12 {
+    width: 12px;
+}
+.m-16{
+    margin-right: 16px;
+}
+.float-right{
+    float: right !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -28,9 +57,13 @@
 .col-3 {
     width: calc(100%/3);
 }
+.col-f {
+    width: 100%;
+}
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 .clear{
     
@@ -129,7 +162,7 @@ header .search-btn:hover{
 /* content */
 section .content {
     width: 100%;
-    padding: 64px 0;
+    padding: 64px 0 64px;
     width: 800px;
     margin-right: auto;
     margin-left: auto;
@@ -155,19 +188,16 @@ section .about-text{
     text-align: justify;
     line-height: 1.4;
     font-size: 14px;
-    margin-bottom: 48px;
 }
 /* band member */
-.member-list {
-    margin-top: 48px;
-}
 
-.member-list .member-name {
+.member-name {
     font-size: 15px;
     text-align: center;
+    margin-bottom: 16px;
 }
 
-.member-list .member-avatar {
+.member-avatar {
     width: 154px;
     border-radius: 5px;
 }
@@ -242,16 +272,69 @@ section .about-text{
  
 }
 
-.place-tour-item .place-buy-tickets {
+.btn {
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 8px 16px;
     margin: 16px 0px;
     display: inline-block;
+    border: none;
 }
 
-.place-tour-item .place-buy-tickets:hover {
+.btn:hover {
     background-color: grey;
     color: black;
+    cursor: pointer;
+}
+
+/* contact */
+
+.contact-content {
+    margin-top: 48px;
+    font-size: 15px;
+}
+
+.form-control {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+}
+
+.icon-contact {
+    width: 46px;
+}
+
+.contact-infor {
+    font-size: 18px;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+/* map-section */
+.map-section img{
+    width: 100%;
+}
+
+.socials-list a {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.socials-list a:hover{
+    opacity: .8;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+footer .copyright a,p {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.6);
 }
