@@ -4,13 +4,36 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* common */
 .text-white {
     color: white;
 }
+.text-center{
+    text-align: center;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    padding-left: 8px;
+    padding-right: 8px;
+    float:left;
+}
+.col-2 {
+    width: 50%;
+}
+.col-3 {
+    width: calc(100%/3);
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
 .clear{
+    
     clear: both;
 }
 header{
@@ -132,15 +155,11 @@ section .about-text{
     text-align: justify;
     line-height: 1.4;
     font-size: 14px;
+    margin-bottom: 48px;
 }
 /* band member */
 .member-list {
     margin-top: 48px;
-}
-
-.member-list .member-item {
-    float: left;
-    width: calc(100%/3);
 }
 
 .member-list .member-name {
@@ -197,10 +216,6 @@ section .about-text{
 }
 .list-place-tour .place-tour-item {
     text-align: left;
-    float: left;
-    overflow: hidden;
-    width: calc(100%/3);
-    padding: 0px 8px;
     background-color: white;
     background-clip: content-box;
 }
